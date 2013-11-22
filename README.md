@@ -6,5 +6,5 @@ Le cadre d'utilisation peut être par exemple, lors d'une assemblée projeter de
 
 Le mur d'expression se compose en 2 parties :
 
-    une application Android permettant de rediriger les sms sur internet [disponible ici ​https://devel2.debrouillonet.org/websvn/filedetails.php?repname=Dnet+-+NG+espaceTic&path=%2Fbranches%2Fj.rat%2Fsms_wall%2Fapplication_compilee%2FSMS_WALL.apk]
-    2 pages web : le mur d'expression et le nuage de tags (ainsi qu'un fichier "add_sms.php" permettant de remplir la base de donnée du site) 
+- une application Android permettant de rediriger les sms sur internet [disponible ici ​https://devel2.debrouillonet.org/websvn/filedetails.php?repname=Dnet+-+NG+espaceTic&path=%2Fbranches%2Fj.rat%2Fsms_wall%2Fapplication_compilee%2FSMS_WALL.apk]
+- 2 pages web : le mur d'expression et le nuage de tags (ainsi qu'un fichier "add_sms.php" permettant de remplir la base de donnée du site) 
