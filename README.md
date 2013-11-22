@@ -12,4 +12,4 @@ Le mur d'expression se compose en 2 parties :
 
 Le principe :
 
-[![Principe](https://github.com/julienrat/sms_wall/blob/master/screenshots/principe_smswall.png)](#features)
+[![Principe](https://raw.github.com/julienrat/sms_wall/master/screenshots/principe_smswall.png)](#features)
