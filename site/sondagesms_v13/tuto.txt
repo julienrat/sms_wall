@@ -1,0 +1,115 @@
+/////////////////////////////////////////////////////////////
+//////////////                                 //////////////
+//////////////     MANUEL POUR UTILISATEUR     //////////////
+//////////////                                 //////////////
+/////////////////////////////////////////////////////////////
+
+
+
+***********************************
+*** Mur de sms et Nuage de tags ***
+***********************************
+
+* Il faut avoir :
+	> Un ordinateur avec un navigateur web et une connexion internet
+	> Un téléphone (avec Android 2, 3 et 4) connecté en wifi ou en 3G
+	> Un vidéoprojecteur
+
+* Installation de l'appli sur son téléphone
+Aperçu : http://demo.lespetitsdebrouillardspc.org/sondages/screenshot.png
+	> Activer sources inconnues sur son téléphone
+	> Installation de l'appli sms_wall sur son téléphone : http://demo.lespetitsdebrouillardspc.org/sondages/sms_wall.apk
+
+* Lancement de l'appli
+	> On lui indique l'adresse du serveur 
+		Mur de SMS > http://demo.lespetitsdebrouillardspc.org/sondages/smswall/
+		Nuage de tags > http://demo.lespetitsdebrouillardspc.org/sondages/nuagetags/
+	> Le titre que vous voulez
+	> Démarrer l'application et rester connecté en wifi ou en 3G avec votre téléphone
+
+* Afficher les résultats
+	> Avec votre navigateur, projeter l'outil que vous souhaitez (smswall ou nuage de tags) à partir de http://demo.lespetitsdebrouillardspc.org/sondages/
+
+>> Tous les SMS qui passeront sur le téléphone seront renvoyés au site et affichés sur le mur.
+
+
+* Usages possibles
+-> poser des questions quand on est timide par exemple !
+-> évaluer rapidement une activité
+-> demander un mot-clé sur un concept
+ou autre .... à vous de trouver les usages...
+
+
+* Effacement
+Le bouton "Effacer le mur" permet de TOUT remettre à zéro
+
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!!!! Inconvénients et vigilance !!!!
+!!	> Pas de modération technique
+!!	> Utilisateur unique : un seul téléphone connecté sur chaque outil en même temps
+!!	> Il est conseillé d'avoir un numéro de téléphone dédié (abonnement par carte, ...)
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+
+*********************
+*** Votes par SMS ***
+*********************
+
+* Il faut avoir :
+	> Un ordinateur (avec Java à jour) et une connexion internet
+	> Un téléphone (avec Android 2.2 ou +) connecté en wifi ou en 3G
+	> Un vidéoprojecteur
+	> Un mail (dédié pour les sondages) sous gmail
+
+* Installation de l'appli sur son téléphone
+	> Installer l'appli smstomail : https://www.smstomail.nl/beta/
+	> Configurer smstomail en entrant votre adresse gmail de sondages
+
+* Installation du logiciel sur l'ordinateur
+	> Télécharger, décompresser puis lancer le logiciel votesms (3,9 Mo) : http://demo.lespetitsdebrouillardspc.org/sondages/votesms_v1.zip
+	> Dans l'onglet configuration : 
+		- renseigner les champs sondage (inutile de remplir les 4, vous pouvez faire simplement un OUI/NON)
+		- renseigner le titre du sondage 
+		- renseigner l'adresse mail et le mot de passe (adresse sondages gmail)
+			NB : désolé pas réussi à cacher le MDP
+	> Cliquer sur l'onglet demarrer
+
+>> Tous les SMS qui passeront sur le téléphone, avec comme texte un des champs remplis (par exemple OUI ou NON), seront renvoyés au logiciel et affichés sur le mur.
+
+
+
+
+///////////////////////////////////////////////////////////
+//////////////                               //////////////
+//////////////    MANUEL ADMINISTRATEUR :    //////////////
+//////////////       CRÉER SON SERVEUR       //////////////
+//////////////                               //////////////
+///////////////////////////////////////////////////////////
+
+* Il faut avoir :
+	> Une installation apache php mysql
+	> Un espace de stockage de 20 Mo
+	> Les sources à jour : http://demo.lespetitsdebrouillardspc.org/sondages/sources/
+
+
+* Installer la base de donnée :
+	> Créer l'utilisateur sondagesms avec tous les privilèges sur la base du même nom
+		(si vous mettez un mot de passe, il faudra aller le changer dans les fichiers index.php, add_sms.php, nuage.php et connections.php)
+
+	> Créer la table smswall avec les colonnes :
+		id INT (auto-incrémenté)
+		titre TEXT utf8
+		phrases TEXT utf8
+		tel TEXT utf8
+
+	> Créer la table nuagetags avec les colonnes :
+		id INT (auto-incrémenté)
+		titre TEXT utf8
+		mots TEXT utf8
+		tel TEXT utf8
+
+* Dans tous les fichiers en .php, .txt, vérifier et remplacer "http://demo.lespetitsdebrouillardspc.org/sondages/" par l'url correspondant à votre espace web dédié aux sondages SMS.
+
+* Changer le QRcode pour qu'il aboutisse sur votre serveur à l'url voulue.
+
