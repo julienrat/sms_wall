@@ -68,10 +68,13 @@ Applis Android :
 <br/>
 <a href="smswall/index.php"><h2>Le mur de sms</h2></a>
 
-<a href="nuagetags/index.php"><h2>Le nuage de tags</h2></a>
+<a href="smswall/nuage.php"><h2>Le nuage de tags</h2></a> 
 
-<a href="votesms/index.php"><h2>Les votes par sms</h2></a>
+<a href="graph.php"><h2>Référendum par sms</h2></a>
 
+<a href="telecharger.php"><h2>Télécharger les votes en CSV</h2></a>
+
+<a href="import_vote.php"><h2>Importez les votes en CSV</h2></a>
 
 
 
